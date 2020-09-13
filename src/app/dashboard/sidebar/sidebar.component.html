@@ -1,0 +1,101 @@
+<div class="sidebar-wrapper">
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <h4 class="filter-text">Filters :</h4>
+        </div>
+        <div class="sidebar-container">
+            <div class="filter-container">
+                <h5 class="no-margin">Launch Year</h5>
+                <hr class="line">
+                <div class="btn-area">
+                    <div class="btn-row">
+                        <button class="filter-btn" 
+                        [routerLink]="['/filter-by-year',2006]"
+                        routerLinkActive="active">2006</button>  
+                        <!-- (click)="updatefilter-by-year($event)" -->
+                        <button class="filter-btn" 
+                        [routerLink]="['/filter-by-year',2007]"
+                        routerLinkActive="active">2007</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2008]" 
+                        routerLinkActive="active">2008</button>
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2009]" 
+                        routerLinkActive="active">2009</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2010]" 
+                        routerLinkActive="active">2010</button>
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2011]" 
+                        routerLinkActive="active">2011</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2012]" 
+                        routerLinkActive="active">2012</button>
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2013]" 
+                        routerLinkActive="active">2013</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2014]" 
+                        routerLinkActive="active">2014</button>
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2015]" 
+                        routerLinkActive="active">2015</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2016]" 
+                        routerLinkActive="active">2016</button>
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2017]" 
+                        routerLinkActive="active">2017</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2018]" 
+                        routerLinkActive="active">2018</button>
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2019]" 
+                        routerLinkActive="active">2019</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['/filter-by-year',2020]" 
+                        routerLinkActive="active">2020</button>
+                    </div>
+                </div>
+                <h5 class="no-margin">Successful launch</h5>
+                <hr class="line">
+                <div class="btn-area">
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['launch-status','true']" 
+                        routerLinkActive="active">True</button>
+                        <button class="filter-btn"
+                        [routerLink]="['launch-status','false']" 
+                        routerLinkActive="active">False</button>
+                    </div>
+                </div>
+                <h5 class="no-margin">Successful landing</h5>
+                <hr class="line">
+                <div class="btn-area">
+                    <div class="btn-row">
+                        <button class="filter-btn"
+                        [routerLink]="['land-status','true']" 
+                        routerLinkActive="active">True</button>
+                        <button class="filter-btn"
+                        [routerLink]="['land-status','false']" 
+                        routerLinkActive="active">False</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
