@@ -4,6 +4,32 @@ Users have option to apply filters like date, launches - success or fail, landin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
+## Stack
+Angular CLI - 9
+Angular Universal v11.0.0
+HTML and CSS 3
+REST Api's - spaceX
+
+## External Resources
+Sitemap - xml-sitemaps.com
+
+## Approach
+The main page is rendered on server side through Angular Universal. Data from the source api's is stored in an Observable of a Service which handles data storage and is returned when requested by the component.
+The data is then subscribed in the component and is visualized in the component's View.
+The second/Filter page is loaded normally and it subscribes to data inside an Observable and the iterates the data and pushes data inside an Array which is used to populate the data on the components view.
+Filter Component is responsible to populate data after applying filters, which means that only one components view is used to show all filtered data after applying year, landing and launch filters.
+Change of URL on applying filters is achieved by `Params` Observable of `ActivatedRouteSnapshot`.
+
+## Installation
+Run `npm install` from CLI and it will install dependencies required to run the program.
+
+## Build:ssr (Server side Rendered Code)
+Run `ng build --prod && ng run spaceXprograms:server:production` from Angular CLI to get the build with pre-rendered code
+
+## Run server side rendered code locally
+Run `npm run spaceXprograms:serve-ssr` to run the server side rendered code in your browser locally.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
