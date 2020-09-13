@@ -49,16 +49,16 @@
     background:#7AB904;
 }
 
-@media only screen  and (max-width:768px){
+@media only screen  and (max-width: 1024px) and (min-width:700px){
     .sidebar-wrapper{
-        width:40%;
+        width:35%;
         text-align:center
     }
     .sidebar{
         width:100%;
     }
 }
-@media only screen  and (max-width:600px){
+@media only screen  and (max-width:700px){
     .sidebar-wrapper{
         width:100%;
         text-align:center
