@@ -1,8 +1,6 @@
 {
   "name": "space-xprograms",
   "version": "0.0.0",
-  "start:heroku":"node dist/server",
-  "postinstall":"npm run build:ssr",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,7 +11,9 @@
     "dev:ssr": "ng run spaceXprograms:serve-ssr",
     "serve:ssr": "node dist/spaceXprograms/server/main.js",
     "build:ssr": "ng build --prod && ng run spaceXprograms:server:production",
-    "prerender": "ng run spaceXprograms:prerender"
+    "prerender": "ng run spaceXprograms:prerender",
+    "start:heroku":"node dist/server",
+    "postinstall":"npm run build:ssr"
   },
   "private": true,
   "dependencies": {
