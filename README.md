@@ -1,4 +1,6 @@
 # SpaceXprograms
+SpaceXprograms is an angular app which fetches data through the spaceX api's and displays the data in the spaceXPrograms dashboard by applying filters on it.
+Users have option to apply filters like date, launches - success or fail, landing- success or fail etc.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
